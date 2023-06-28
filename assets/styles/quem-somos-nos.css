@@ -1,0 +1,138 @@
+/* QUEM SOMOS NOS MOBILE */
+
+.container-sobre-nos-desktop {
+    display: none;
+}
+
+.container-sobre-nos-mobile {
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quem-somos-mobile {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.a-tls-mobile {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.img-quem-somos-nos-mobile {
+    padding-bottom: 15px;
+}
+
+.p-quem-somos-nos-mobile {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.ler-mais-botao-mobile {
+    text-decoration: none;
+    background-color: var(--cor-amarelo-padrao);
+    color: var(--cor-branca);
+    border-radius: 15px;
+    padding: 7px 25px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* QUEM SOMOS NOS DESKTOP */
+@media screen and (min-width:1024px) {
+
+    .container-localizacao {
+        display: none;
+    }
+    .container-sobre-nos-mobile {
+    display: none;
+    }
+
+    .container-sobre-nos-desktop {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .img-sobre-nos-desktop {
+        width: 100%;
+    }
+
+    .info-sobre-nos-desktop {
+        padding:  20px 0 0 40px;
+        width: 100%;
+    }
+
+    .quem-somos-nos-desktop {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .a-tls-desktop {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .p-sobre-nos-desktop {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    .ler-mais-desktop {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--cor-branca);
+        background-color: var(--cor-amarelo-padrao);
+        padding: 5px 12px;
+        border-radius: 12px;
+    }
+    
+
+}
+
+@media screen and (min-width:1500px) {
+    .quem-somos-nos-desktop {
+        font-size: 35px;
+    }
+
+    .a-tls-desktop {
+        font: 50px;
+        
+        margin-bottom: 30px;
+    }
+    .p-sobre-nos-desktop {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .info-sobre-nos-desktop {
+        padding: 40px 0 0 40px;
+    }
+
+    .ler-mais-desktop {
+        font-size: 25px;
+        padding: 3px 30px;
+    }
+    .img-sobre-nos-desktop {
+        width: 100%;
+    }
+}

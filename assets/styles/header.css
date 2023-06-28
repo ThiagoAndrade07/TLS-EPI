@@ -1,0 +1,119 @@
+.cabeçalho {
+    background-color: var(--cor-cinza-padrao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__imagem {
+    width: 90px;
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 80vw;
+    text-align: end;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--cor-cinza-padrao);
+}
+
+.lista-menu__link {
+    font-size: 20px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    background-color: var(--cor-cinza-padrao);
+    font-weight: 600;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.contato-header {
+    padding: 8px 25px;
+    background-color: var(--cor-amarelo-padrao);
+    border-radius: 15px;
+    color: var(--cor-branca);
+}
+
+
+.logo-autorelevo-header {
+    background-color: var(--cor-cinza-padrao);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container__botao {
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+    .lista-menu {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        justify-content: space-around;
+    }
+
+    .container__imagem {
+        width: 120px;
+    }
+
+    .lista-menu {
+        display: flex;
+        position: static;
+        width: fit-content;
+    }
+    
+    .container__botao:checked~.lista-menu {
+        display: none;
+    }
+
+    .lista-menu__link {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+    
+    .logo-autorelevo-header {
+        display: none;
+    }
+
+    .contato-header {
+        padding: 8px 40px;
+    }
+    
+}
